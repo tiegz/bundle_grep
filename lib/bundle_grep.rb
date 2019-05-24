@@ -1,6 +1,6 @@
 require "bundle_grep/version"
 
-module BundleGrep < Bundler::Plugin::API
+class BundleGrep < Bundler::Plugin::API
   # Register this class as a handler for the `my_command` command
   command "grep"
 
