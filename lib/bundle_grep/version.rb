@@ -1,3 +1,3 @@
-module BundleGrep
+class BundleGrep
   VERSION = "0.1.0"
 end
