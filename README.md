@@ -21,6 +21,10 @@ $ bundle grep spec.license
 $ .../somelibrary/somelibrary.gemspec:  spec.license       = "MIT"
 ```
 
+## Uninstallation
+
+Bundler currently doesn't have a `bundler plugin uninstall ...` command, but you can reset your local plugins with a simple `rm -rf .bundle/plugin`
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
