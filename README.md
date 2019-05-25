@@ -18,7 +18,7 @@ And then execute:
 
 ```sh
 $ bundle grep spec.license
-$ /Users/tiegzaharia/Code/bundle_grep/bundle_grep.gemspec:  spec.license       = "MIT"
+$ .../somelibrary/somelibrary.gemspec:  spec.license       = "MIT"
 ```
 
 ## Development
