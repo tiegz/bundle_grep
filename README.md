@@ -7,12 +7,19 @@ A [Bundler Plugin](https://bundler.io/v2.0/guides/bundler_plugins.html) that gre
 Add this line to your application's Gemfile:
 
 ```ruby
-bundler plugin install bundle_grep
+plugin 'my_plugin' # Installs from Rubygems
 ```
+
+Or, install manually:
+
+    $ bundler plugin install bundle_grep
 
 And then execute:
 
-    $ bundle grep foo
+```sh
+$ bundle grep spec.license
+$ /Users/tiegzaharia/Code/bundle_grep/bundle_grep.gemspec:  spec.license       = "MIT"
+```
 
 ## Development
 
