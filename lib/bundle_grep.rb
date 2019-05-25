@@ -2,7 +2,7 @@ require "open3"
 require "bundle_grep/version"
 require "bundler/cli/list"
 
-class BundleGrep < Bundler::Plugin::API
+class BundleGrep
   # Register this class as a handler for the `bundle_grep` command
   command "grep"
 
