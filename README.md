@@ -7,7 +7,7 @@ A [Bundler Plugin](https://bundler.io/v2.0/guides/bundler_plugins.html) that gre
 Add this line to your application's Gemfile:
 
 ```ruby
-plugin 'my_plugin' # Installs from Rubygems
+plugin 'bundle_grep' # Installs from Rubygems
 ```
 
 Or, install manually:
