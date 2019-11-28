@@ -14,6 +14,8 @@ Gem::Specification.new do |spec|
   spec.description   = %q{Curious where a method, error or just some text originates? Check your bundled libraries with bundle grep!}
   spec.homepage      = "https://github.com/tiegz/bundle_grep"
   spec.license       = "MIT"
+  spec.cert_chain    = ['certs/tiegz.pem']
+  spec.signing_key   = File.expand_path("~/.ssh/gem-private_key.pem") if $0 =~ /gem\z/
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
