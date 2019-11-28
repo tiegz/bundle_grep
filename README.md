@@ -14,13 +14,6 @@ Or, install manually:
 
     $ bundler plugin install bundle_grep
 
-And then execute:
-
-```sh
-$ bundle grep spec.license
-$ .../somelibrary/somelibrary.gemspec:  spec.license       = "MIT"
-```
-
 ## Secure Installation
 
 bundler_grep is cryptographically signed. To be sure the gem you install hasn’t been tampered with:
@@ -41,6 +34,15 @@ And run bundler in your project:
   $ bundle --trust-policy MediumSecurity
 
 (for more information on --trust-policy, see https://guides.rubygems.org/security/#using-gems)
+
+## Usage
+
+Once installed, execute:
+
+```sh
+$ bundle grep spec.license
+$ .../somelibrary/somelibrary.gemspec:  spec.license       = "MIT"
+```
 
 ## Uninstallation
 
