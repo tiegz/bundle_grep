@@ -21,6 +21,27 @@ $ bundle grep spec.license
 $ .../somelibrary/somelibrary.gemspec:  spec.license       = "MIT"
 ```
 
+## Secure Installation
+
+bundler_grep is cryptographically signed. To be sure the gem you install hasn’t been tampered with:
+
+Add my public key (if you haven't already) as a trusted certificate:
+
+``` sh
+gem cert --add <(curl -Ls https://raw.githubusercontent.com/tiegz/bundle_grep/master/certs/tiegz.pem)
+```
+
+Add this line to your application's Gemfile:
+
+```rugby
+plugin 'bundle_grep' # Installs from Rubygems
+```
+
+And run bundler in your project:
+  $ bundle --trust-policy MediumSecurity
+
+(for more information on --trust-policy, see https://guides.rubygems.org/security/#using-gems)
+
 ## Uninstallation
 
 Bundler currently doesn't have a `bundler plugin uninstall ...` command, but you can reset your local plugins with a simple `rm -rf .bundle/plugin`
