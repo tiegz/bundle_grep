@@ -6,6 +6,6 @@ class BundleGrepTest < Minitest::Test
   end
 
   def test_it_does_something_useful
-    assert false
+    skip("Write some tests.")
   end
 end
